@@ -1,0 +1,6 @@
+{
+    "Provider":{
+        "Name":"ezfaas",
+        "Gateway":"localhost"
+    }
+}

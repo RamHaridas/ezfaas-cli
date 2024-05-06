@@ -1,0 +1,11 @@
+provider:
+  name: openfaas
+  gateway: fsdfsfd
+functions:
+  - name: mufunction
+    lang: python3
+    handler: handler
+    image: image
+    env:
+      name: haridas
+      value: val
