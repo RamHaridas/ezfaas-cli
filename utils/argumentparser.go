@@ -21,7 +21,7 @@ func ParseArguments(args []string) int {
 		fmt.Println("Deploying...")
 	case "login":
 		fmt.Println("Checking if Docker is authenticated...")
-		checkDockerLogin()
+		CheckDockerLogin()
 	case "version":
 		fmt.Println("1.0.0")
 	default:

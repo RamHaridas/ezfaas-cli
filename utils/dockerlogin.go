@@ -5,10 +5,11 @@ import (
 	"os/exec"
 )
 
-func checkDockerLogin() int {
+func CheckDockerLogin() int {
 	path, err := exec.LookPath("docker")
 	if err != nil {
 		fmt.Println("Docker CLI not found")
+		return 1
 	}
 	cmd := exec.Command(path, "login")
 	if err := cmd.Run(); err != nil {
