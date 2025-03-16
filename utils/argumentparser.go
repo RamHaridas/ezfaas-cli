@@ -19,6 +19,11 @@ func ParseArguments(args []string) int {
 		fmt.Println("Pushing...")
 	case "deploy":
 		fmt.Println("Deploying...")
+	case "login":
+		fmt.Println("Checking if Docker is authenticated...")
+		checkDockerLogin()
+	case "version":
+		fmt.Println("1.0.0")
 	default:
 		fmt.Println("Invalid parameter " + param)
 	}
