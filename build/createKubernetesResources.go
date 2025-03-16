@@ -16,5 +16,5 @@ func CreateServiceYaml(yaml_obj models.Config) {
 	port.Name = "http"
 	port.Port = 80
 	port.TargetPort = 8080
-	service.Spec.Ports = append(service.Spec.Ports, port)
+	// service.Spec.Ports = append(service.Spec.Ports, port)
 }
